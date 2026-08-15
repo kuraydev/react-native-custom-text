@@ -1,6 +1,6 @@
 {
-  "name": "@freakycoder/react-native-custom-text",
-  "version": "0.1.2",
+  "name": "@kuraydev/react-native-custom-text",
+  "version": "1.0.0",
   "description": "Custom Text with cool heading & font family interaction for React Native.",
   "keywords": [
     "text",
@@ -23,7 +23,7 @@
   "homepage": "https://www.freakycoder.com",
   "bugs": "https://github.com/WrathChaos/react-native-custom-text/issues",
   "main": "./build/dist/RNText.js",
-  "repository": "git@github.com:WrathChaos/react-native-custom-text.git",
+  "repository": "git@github.com:kuraydev/react-native-custom-text.git",
   "author": "Kuray (FreakyCoder) <kurayogun@gmail.com>",
   "license": "MIT",
   "scripts": {
@@ -58,5 +58,23 @@
   },
   "dependencies": {
     "tslib": "^2.1.0"
-  }
+  },
+  "peerDependencies": {
+    "react": ">=17.0.0",
+    "react-native": ">=0.64.0"
+  },
+  "types": "./build/dist/RNText.d.ts",
+  "exports": {
+    ".": {
+      "types": "./build/dist/RNText.d.ts",
+      "default": "./build/dist/RNText.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "build",
+    "lib",
+    "README.md",
+    "LICENSE"
+  ]
 }
